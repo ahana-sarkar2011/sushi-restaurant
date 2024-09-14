@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>GLTF sushi restraunt</title>
+        <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-assets>
+                <a-asset-item src="scene.gltf" id="sushi"></a-asset-item>
+            </a-assets>
+            <a-entity gltf-model="#sushi" position="10 3 10" scale="3 3 3" animation-mixer></a-entity>
+            <a-camera look-controls-enabled wasd-controls="fly:true" position="0 5 15"></a-camera>
+        </a-scene>
+    </body>
+</html>
